@@ -4,13 +4,11 @@ class ToDoList:
     def __init__(self):
         self.tasks = []
 
-    def add_task(self, task):
-        self.tasks.append(task)
-
-    def add_task_by_hand(self, description, due_date=None, priority=None):
+    def add_task(self, description, due_date=None, priority=None):
         task = Task(description, due_date, priority)
         self.tasks.append(task)
 
+   
     def list_tasks(self):
         if not self.tasks:
             return "No tasks found."

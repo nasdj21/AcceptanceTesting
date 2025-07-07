@@ -11,4 +11,3 @@ class Task:
     def __repr__(self):
         status = 'Completed' if self.completed else 'Pending'
         return f"{self.description} (Due: {self.due_date}, Priority: {self.priority}, Status: {status})"
-        
